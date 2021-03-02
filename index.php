@@ -101,6 +101,14 @@
             echo "<div class='alert alert-danger'>No records found.</div>";
         }
         ?>
+
+        <a href='exportJson.php' class='btn btn-primary m-b-1em pull-right'>Export Json file</a>
+        <form action="importJson.php" method="post" enctype="multipart/form-data">
+            <strong style="color:red; font-size:large">Add a JSON File</strong><input type="file" name="jsonFile">
+            <br>
+            <input type="submit" class="btn btn-primary" value="Import" name="buttonImport">
+        </form>
+
     </div> <!-- end .container -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
